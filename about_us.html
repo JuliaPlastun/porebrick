@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вдоль поребрика</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+  />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    >
+	</script>
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <div class="logo">
+     <a href="index.html">
+       <img src="images/logo1.png" alt="Логотип">
+     </a>  
+     <div class="site-title">
+      <a href="index.html"> <b>Вдоль поребрика</b></a>
+     </div>
+    </div>
+
+
+    <nav class="navbar">
+        <a  href="index.html">Главная</a>
+        <a  href="about_us.html">О нас</a>
+        <a  href="tours.html">Экскурсии</a>
+        <a  href="gallery.html">Галерея</a>
+
+    <a  href="#book-form" id="form" class="btn">Забронировать</a>
+
+</header>
+
+<!-- header section ends -->
+<!-- login form container  -->
+
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="">
+        <h3>Забронировать</h3>
+		<input type="name" id="name"class="box" placeholder="Ваше имя">
+        <input type="email" id="email"class="box" placeholder="Ваш email">
+        <input type="phone" id="phone"class="box" placeholder="Ваш номер телефона">
+        <input type="text"id="city" class="box" placeholder="Название экскурсии">
+        <input type="number"id="number" min="1" class="box" placeholder="Количество людей">
+        <input type="date"id="date" class="box" placeholder="Дата экскурсии">
+        <textarea placeholder="Ваше сообщение..."id="message" cols="69" rows="5"></textarea>
+         <button class="btn" onclick="sendMail()">Забронировать</button>
+    </form>
+
+</div>
+
+<section class="about" id="about">
+
+
+    <div class="video-container" data-aos="fade-right" data-aos-delay="300">
+        <video src="images/about_us3.mp4" muted autoplay loop class="video"></video>
+        <div class="controls">
+            <span class="control-btn" data-src="images/about_us3.mp4"></span>
+            <span class="control-btn" data-src="images/about_us8.mp4"></span>
+            <span class="control-btn" data-src="images/about_us5.mp4"></span>
+        </div>
+    </div>
+
+    <div class="content" data-aos="fade-left" data-aos-delay="600">
+        <span>Почему мы?</span>
+        <h3>В чём наш секрет?</h3>
+        <p>Мы проводим уникальные и необычные прогулки с харизматичными экскурсоводами</p>
+        <a href="#" class="btn">Читать дальше</a>
+    </div>
+    <div class="content" data-aos="fade-left" data-aos-delay="600">
+        <h3>Популярность</h3>
+        <p>Мы на 5 месте в рейтинге агенств по мнению Фонтанки.ру</p>
+        <h3>Необычность</h3>
+        <p>Мы проводим по непопулярным маршрутам, рассказывая городские легенды</p>
+        <h3>Скидки для местных</h3>
+        <p>Мы поможем узнать ваш город с новой для вас стороны</p>
+        <h3>Экстримальность</h3>
+        <p>Узнайте тайны заброшенных объектов в компании в нашими гидами</p>
+        <a href="#" class="btn">Читать дальше</a>
+    </div>
+
+</section>
+<!-- banner -->
+<div class="banner">
+
+    <div class="content" data-aos="zoom-in-up" data-aos-delay="300">
+        <span>Начни свои лучшие выходные с нами</span>
+        <h3>Давай прогуляемся вдоль поребрика</h3>
+    </div>
+
+</div>
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box" >
+		
+		    <div class="logo">
+             <a href="index.html">
+              <img src="images/logo1.png" alt="Логотип">
+             </a>  
+             <div class="site-title">
+              <a href="index.html"> <b>Вдоль поребрика</b></a>
+             </div>
+            </div>
+		
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-telegram"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href ="#"class="fab fa-vk"></a>
+            </div>
+        </div>
+
+        <div class="box" >
+            <h3>Меню</h3>
+            <a href="index.html" class="links"> <i class="fas fa-arrow-right"></i> Главная </a>
+            <a href="about_us.html" class="links"> <i class="fas fa-arrow-right"></i> О нас  </a>
+            <a href="tours.html" class="links"> <i class="fas fa-arrow-right"></i> Экскурсии </a>
+            <a href="gallery.html" class="links"> <i class="fas fa-arrow-right"></i> Галерея </a>
+        </div>
+
+        <div class="box" >
+            <h3>Контакты</h3>
+            <p> <i class="fas fa-map"></i> Большая Морская, Санкт-Петербург </p>
+            <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+            <p> <i class="fas fa-envelope"></i> porebrick@gmail.com </p>
+            <p> <i class="fas fa-clock"></i> 9:00 - 2:00 </p>
+        </div>
+
+        <div class="box" >
+            <h3>Рассылка</h3>
+            <p>Подпишитесь на нашу новостную рассылку, чтобы быть в курсе всех уникальных предложений</p>
+            <form action="">
+                <input type="email1" name="" placeholder="Ваш email" class="email" id="">
+                <button class="btn" >Подписться</button>
+            </form>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- footer section ends -->
+
+
+
+<!-- custom js file link  -->
+<script src="js/javascript.js"></script>
+<script src="js/video.js"></script>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+></script>
+<script type="text/javascript">
+  (function () {
+    emailjs.init("user_XjYyzXAPGXMehA9kN");
+  })();
+</script>
+
+
+</body>
+</html>
