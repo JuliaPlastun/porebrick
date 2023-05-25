@@ -671,6 +671,6 @@ section {
 		background-color: var(--color-dark);
 	}
 	.header {
-		filter: none;
+		filter: invert(100%);
 	}
 }
