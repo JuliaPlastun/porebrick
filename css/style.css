@@ -673,4 +673,7 @@ section {
 	.header {
 		filter: invert(100%);
 	}
+    .background-color{
+		filter: invert(100%);
+	}
 }
