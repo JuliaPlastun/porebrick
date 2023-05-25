@@ -670,7 +670,7 @@ section {
 		background-color: var(--color-dark);
 	}
 	.header {
-		filter: invert(100%);
+		filter: none;
 	}
 }
 
