@@ -674,3 +674,11 @@ section {
 	}
 }
 
+@media (prefers-color-scheme: light) {
+	body {
+		background-color: var(--color-light);
+	}
+	.header {
+		filter: invert(100%);
+	}
+}
