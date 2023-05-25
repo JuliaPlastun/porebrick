@@ -666,9 +666,9 @@ section {
 /* DARK  OS  */
 
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
 	body {
-		background-color: var(--color-light);
+		background-color: var(--color-dark);
 	}
 	.header {
 		filter: none;
